@@ -3,9 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - chmod +x ./gradlew
-      - ./gradlew assembleDebug
+      - echo "Fake building... "
+      - ls -la
 artifacts:
   files:
-     - './android/app/build/outputs/**/*.apk'
+     - './apk/*.apk'
   discard-paths: yes
